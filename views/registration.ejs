@@ -1,0 +1,113 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+  crossorigin="anonymous"
+/>
+
+<!-- Input Fields -->
+<div class="card text-bg-info text-center m-3 mx-auto" style="width: 550px">
+  <form action="/user/create-user" method="post" style="display: inline-flex">
+    <div class="card-body">
+      <h5 class="card-title">User Registration</h5>
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Name Surname"
+          name="name"
+          required
+        />
+        <label for="floatingInput">Full Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="date"
+          class="form-control"
+          id="floatingInput"
+          name="dob"
+          required
+        />
+        <label for="floatingInput">Date of birth</label>
+      </div>
+      <div class="form-floating mb-3">
+        <select
+          class="form-select"
+          id="floatingSelect"
+          aria-label="Select gender from the dropdown"
+          name="gender"
+          required
+        >
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="floatingSelect">Gender</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Phone Number"
+          name="phone_number"
+          required
+        />
+        <label for="floatingInput">Phone Number</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="date"
+          class="form-control"
+          id="floatingInput"
+          name="doj"
+          required
+        />
+        <label for="floatingInput">Date of joining</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@ims.com"
+          name="username"
+          required
+        />
+        <label for="floatingInput">User Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="password"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="Password"
+          name="password"
+          required
+        />
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="password"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="Confirm Password"
+          name="confirm_password"
+          required
+        />
+        <label for="floatingPassword">Confirm Password</label>
+      </div>
+      <div>
+        <button type="submit">Register</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"
+></script>
